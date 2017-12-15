@@ -1,4 +1,5 @@
 Vagrant.configure("2") do |config|
+  config.berkshelf.enabled = true
   config.vm.box = "opscode-ubuntu-14.10"
   config.vm.box_url = "https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.10_chef-provisionerless.box"
   config.omnibus.chef_version = :latest

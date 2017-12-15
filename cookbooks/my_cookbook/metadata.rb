@@ -22,3 +22,6 @@ chef_version '>= 12.14' if respond_to?(:chef_version)
 
 depends 'build-essential'
 depends 'apache2', '>= 1.0.4'
+depends 'chef-client'
+depends 'apt'
+depends 'ntp'
